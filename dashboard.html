@@ -4,12 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Dashboard</title>
+    <script src="https://kit.fontawesome.com/567d061ed4.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
+        <!--Section for the main components--> 
+        <section class="main">
+
+            <!--Welcome Header-->
+            <div class="welcome">
+                <h1>Welcome! 👋</h1>
+            </div>
+    
+            <!--Calendar section-->
+            <div class="calendar">
+                <h1>My Calendar</h1>
+            </div>
+    
+            <!--Course section-->
+            <div class="courses">
+                <h1>My Courses</h1>
+    
+                <!--Insert a href to go to another course-->
+                    <div class="course-card">
+                        <h3>Course 1</h3>
+                        <button>Get Started</button>
+                    </div>
+    
+            </div>
+        </section>
+        
     <!--Navigation bar-->
     <div class="navigation">
         <nav>
@@ -22,64 +49,42 @@
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-home"></i>
+                        <i class="fa-solid fa-home"></i>
                     <span class="nav-item">Home</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-profile"></i>
+                        <i class="fa-solid fa-user"></i>
                     <span class="nav-item">Profile</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-courses"></i>
+                        <i class="fa-solid fa-book"></i>
                     <span class="nav-item">Courses</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-to-do"></i>
+                        <i class="fa-solid fa-list-ol"></i>
                     <span class="nav-item">To-Do</span>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <i class="fa fa-help"></i>
+                        <i class="fa-solid fa-info-circle"></i>
                     <span class="nav-item">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="credits">
+                        <i class="fa fa-handshake-o"></i>
+                    <span class="nav-item">Credits</span>
                     </a>
                 </li>
             </ul>
         </nav>
     </div>
-
-    <!--Section for the main components-->
-    <section class="main">
-
-        <!--Welcome Header-->
-        <div class="top">
-            <h1>Welcome!</h1>
-            <hr>
-        </div>
-
-        <!--Calendar section-->
-        <div class="calendar">
-            <h1>My Calendar</h1>
-        </div>
-
-        <!--Course section-->
-        <div class="courses">
-            <h1>My Courses</h1>
-
-            <!--Insert a href to go to another course-->
-                <div class="course-card">
-                    <h3>Course 1</h3>
-                    <button>Get Started</button>
-                </div>
-
-
-        </div>
-    </section>
 </body>
 </html>
