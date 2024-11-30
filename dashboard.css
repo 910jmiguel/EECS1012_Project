@@ -14,9 +14,10 @@ body {
     background: #dfe9f5;
 }
 
-.navigation {
+.container {
     display: flex;
 }  
+
 
 nav {
     position: relative;
@@ -57,7 +58,7 @@ a {
     padding: 10px;
 }
 
-nav i {
+nav .fa-solid {
     position: relative;
     width: 70px;
     height: 40px;
@@ -85,10 +86,68 @@ a:hover {
 .main {
     position: relative;
     padding: 20px;
-    width: 100%;  
+    width: 100%;
 }
 
-.main-top {
+.welcome {
     display: flex;
-    width: 100;
+    font-size: 24px;
+}
+
+.calendar {
+    margin-top: 20px;
+}
+
+.calendar iframe {
+    margin-top: 20px;
+}
+
+/* Courses */
+.main-course {
+    margin-top: 20px;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+
+.course1 {
+    width: 32%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgb(235,233,233);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+
+.course1 p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.course1 button {
+    background: #000;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.box button:hover {
+    background: rgba(0,0,0,0.842);
+}
+
+.box {
+    font-size: 7rem;
+    float: right;
+    margin: -20px 20px 20px 0;
 }
