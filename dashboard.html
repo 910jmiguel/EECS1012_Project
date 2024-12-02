@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <script src="https://kit.fontawesome.com/567d061ed4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>  
+    <div class="container">
+         <!--Navigation bar-->
+        <nav>
+            <ul>
+                <li>
+                    <a href="dashboard.html" class="logo">
+                    <img src="graduation-hat.png" alt="logo">
+                    <span class="logo-title">DASHBOARD</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fa-solid fa-home"></i>
+                    <span class="nav-item">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                    <span class="nav-item">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html">
+                        <i class="fa-solid fa-book"></i>
+                    <span class="nav-item">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-list-ol"></i>
+                    <span class="nav-item">To-Do</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-info-circle"></i>
+                    <span class="nav-item">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="credits">
+                        <i class="fa fa-handshake-o"></i>
+                    <span class="nav-item">Credits</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    <!--Section for the main components--> 
+    <section class="main">
+
+        <!--Welcome Header-->
+        <div class="welcome">
+            <h1>Welcome! 👋</h1>
+        </div>
+     
+        <!--Calendar section-->
+        <div class="calendar">
+            <h1>My Dashboard</h1>
+            <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&ctz=America%2FToronto&bgcolor=%23ffffff&src=am1pZ3VlbGFAbXkueW9ya3UuY2E&src=Y18wZjBkYzNkM2M1ZjBmNTVlNWIzM2JlY2FiNWM3N2M1MTE0YjIzNWNiZDU5Y2JhZjE2ZWRiMDlmYmEyNGM4ZmNmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4tZ2IuY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%237CB342&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="700" height="400" frameborder="0" scrolling="no"></iframe>
+        </div>
+        
+        <section class="weather-dashboard">
+
+            <div class="weather-container">
+                <h2>Weather 🌦️ </h2>
+                <input type="text" id="city" placeholder="Enter city">
+                <button onclick="getWeather()"><i class="fa fa-search"></i></button>
+                <img id="weather-icon" alt="weather-icon">
+                <div id="temp"></div>
+                <div id="weather-info"></div>
+                <div id="hourly"></div>
+            </div>
+        </section>
+        <script src="weather.js"></script>
+
+        <!--Course section-->
+        <section class="main-course">
+            <h1>My Courses</h1>
+            <div class="course-list">
+
+                <div class="course1">
+                    <h3>Course 1</h3>
+                    <p>Course Description here</p>
+                    <button>Continue</button>
+                </div>
+
+                <div class="course1">
+                    <h3>Course 2</h3>
+                    <p>Course Description here</p>
+                    <button>Continue</button>
+                </div>
+
+                <div class="course1">
+                    <h3>Course 3</h3>
+                    <p>Course Description here</p>
+                    <button>Continue</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        </section>
+    </div>
+
+</body>
+</html>
