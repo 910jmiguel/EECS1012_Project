@@ -86,7 +86,7 @@ a:hover {
 .todo {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    background: #dfe9f5;
     padding: 10px;
 }
 .todo-app {
@@ -99,15 +99,15 @@ a:hover {
 } 
 
 .todo-app h2 {
-    colour: #002765;
+    color: black;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
 .todo-app h2 img {
-width: 30px;
-margin-left: 10px;
+    width: 30px;
+    margin-left: 10px;
 }
 
 .row {

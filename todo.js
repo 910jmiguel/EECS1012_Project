@@ -1,40 +1,42 @@
-// Add a new task to the list
+const inputBox = document.getElementById("input-box");
+const listContainer = document.getElementById("list-container");
+
 function addTask() {
-    const taskInput = document.getElementById('taskInput');
-    const taskText = taskInput.value.trim();
-
-    if (taskText === '') {
-        alert('Please enter a task!');
-        return;
+    if (inputBox.value==='')
+    {
+        alert("There is no text to be added!");
     }
+    else {
+        let li = document.createElement("li");
+        li.innerHTML = inputBox.value;
+        listContainer.appendChild(li);
+        let span = document.createElement('span');
+        span.innerHTML = "\u00d7";
+        li.appendChild (span);
 
-    const taskList = document.getElementById('taskList');
+    }
+    inputBox.value = "";
+    saveData();
 
-    // Create task list item
-    const taskItem = document.createElement('li');
-    taskItem.className = 'task';
-
-    // Task description
-    const taskSpan = document.createElement('span');
-    taskSpan.textContent = taskText;
-    taskSpan.addEventListener('click', () => {
-        taskSpan.classList.toggle('completed');
-    });
-
-    // Remove button
-    const removeButton = document.createElement('button');
-    removeButton.textContent = 'Remove';
-    removeButton.addEventListener('click', () => {
-        taskList.removeChild(taskItem);
-    });
-
-    // Add elements to the task item
-    taskItem.appendChild(taskSpan);
-    taskItem.appendChild(removeButton);
-
-    // Add task to the list
-    taskList.appendChild(taskItem);
-
-    // Clear input
-    taskInput.value = '';
 }
+
+listContainer.addEventListener("click", function(e) {
+    if(e.target.tagName === "LI") {
+        e.target.classList.toggle("checked");
+        saveData();
+    }
+    else if(e.target.tagName === "SPAN") 
+    {
+        e.target.parentElement.remove();
+        saveData();
+    }
+}, false);
+
+function saveData() {
+    localStorage.setItem("data", listContainer.innerHTML);
+}
+
+function showTask(){
+    listContainer.innerHTML = localStorage.getItem("data");
+}
+showTask();
