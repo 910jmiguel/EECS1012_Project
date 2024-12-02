@@ -17,7 +17,7 @@
             <ul>
                 <li>
                     <a href="dashboard.html" class="logo">
-                    <img src="logos/graduation-hat.png" alt="logo">
+                    <img src="graduation-hat.png" alt="logo">
                     <span class="logo-title">DASHBOARD</span>
                     </a>
                 </li>
@@ -70,10 +70,24 @@
      
         <!--Calendar section-->
         <div class="calendar">
-            <h1>My Calendar</h1>
+            <h1>My Dashboard</h1>
             <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&ctz=America%2FToronto&bgcolor=%23ffffff&src=am1pZ3VlbGFAbXkueW9ya3UuY2E&src=Y18wZjBkYzNkM2M1ZjBmNTVlNWIzM2JlY2FiNWM3N2M1MTE0YjIzNWNiZDU5Y2JhZjE2ZWRiMDlmYmEyNGM4ZmNmQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4tZ2IuY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%237CB342&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="700" height="400" frameborder="0" scrolling="no"></iframe>
         </div>
         
+        <section class="weather-dashboard">
+
+            <div class="weather-container">
+                <h2>Weather 🌦️ </h2>
+                <input type="text" id="city" placeholder="Enter city">
+                <button onclick="getWeather()"><i class="fa fa-search"></i></button>
+                <img id="weather-icon" alt="weather-icon">
+                <div id="temp"></div>
+                <div id="weather-info"></div>
+                <div id="hourly"></div>
+            </div>
+        </section>
+        <script src="weather.js"></script>
+
         <!--Course section-->
         <section class="main-course">
             <h1>My Courses</h1>
